@@ -15,7 +15,13 @@ local LocalWP test site.
 
 ## Run it
 
+Credentials come from environment variables, so no password lives in the code.
+
 ```
 pip install -r requirements.txt
+set WP_API_USERNAME=your-username
+set WP_API_PASSWORD=your-application-password
 python main.py
 ```
+
+`WP_API_URL` is optional and defaults to `http://mcp-practice.local`.
